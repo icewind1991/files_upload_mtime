@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>files_upload_mtime</id>
+	<name>Preserve upload mtime</name>
+	<summary>Preserve the modified date of files uploaded trough the web interface.</summary>
+	<description><![CDATA[This reverts the change in behavior when uploading files trough the webinterface made in Nextcloud 12.
+
+With the app enabled any file uploaded trough the webinterface will maintain it's original modified date instead of settings the modified date to the time of upload.]]></description>
+	<licence>AGPL</licence>
+	<author>Robin Appelman</author>
+	<dependencies>
+		<nextcloud min-version="12" max-version="13"/>
+	</dependencies>
+
+	<version>0.1.0</version>
+	<category>files</category>
+	<website>https://github.com/icewind1991/files_upload_mtime</website>
+	<bugs>https://github.com/icewind1991/files_upload_mtime/issues</bugs>
+	<repository type="git">https://github.com/icewind1991/files_upload_mtime.git</repository>
+</info>
